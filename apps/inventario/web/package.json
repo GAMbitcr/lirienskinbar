@@ -1,0 +1,30 @@
+{
+  "name": "lirien-inventario-web",
+  "private": true,
+  "version": "0.4.0",
+  "type": "module",
+  "description": "App de inventario de Lirien Skin Bar (Vite + Preact + TypeScript), servida como Worker de Cloudflare",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "api": "node ../apps-script/dev/server.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.2.1",
+    "preact": "^10.29.8",
+    "read-excel-file": "^9.3.20",
+    "write-excel-file": "^4.1.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "wrangler": "^4.168.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

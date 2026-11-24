@@ -1,0 +1,6 @@
+node_modules/
+apps/inventario/web/dist/
+.wrangler/
+.env.local
+.env.*.local
+.DS_Store
